@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Validation Form Project#1</title>
+</head>
+<body>
+    <script src="JS/script.js"> </script>
+    <div class="container">
+        <div class="head">
+            <h3>CREATE NEW ACCOUNT</h3>
+        </div>
+        <div class="form" id="form">
+        
+            <form class="form-parts" onsubmit="return nameFunc()" >
+                <label>Username</label>
+                <input type="text" placeholder="Enter your name" id="username">
+                <small id="name-msg"></small>
+            </form>
+            
+            <form class="form-parts" onsubmit="return ageFunc()">
+                <label>Age</label>
+                <input type="text" placeholder="Enter your age" id="ages">
+                <small id="age-msg"></small>
+            </form>
+            
+            <form class="form-parts" onsubmit="return passwordFunc()">
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password" id="password">
+                <small id="password-msg"></small>
+            </form>
+            
+            <form class="form-parts" onsubmit="return checkpasswordFunc()">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Re-write your password" id="check-password">
+                <small id="checkpassword-msg"></small>
+            </form>
+
+            <button>SUBMIT</button>
+            <p></p>
+        </div>
+
+
+    </div>
+    
+    
+        
+        
+    
+</body>
+</html>
