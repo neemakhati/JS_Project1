@@ -6,14 +6,14 @@ function validation() {
     var checkPasswd= document.getElementById('check-password').value;
 
 
-    if (username == "") {
+    if (username === "") {
       document.getElementById('name-msg').innerHTML= 'Name must be filled out';
       return false;
     } else {
         document.getElementById('name-msg').style.visibility = 'hidden';
     }
 
-    if(age == ""){
+    if(age === ""){
         document.getElementById('age-msg').innerHTML= ':Age must be filled out';
         return false;
     } else if(isNaN(age)) {
@@ -23,7 +23,7 @@ function validation() {
         document.getElementById('age-msg').style.visibility = 'hidden';
     }
 
-    if(passwd == ""){
+    if(passwd === ""){
         document.getElementById('password-msg').innerHTML= ':Password must be filled out';
         return false;
     } else if(passwd.length <= 6) {
@@ -33,10 +33,10 @@ function validation() {
         document.getElementById('password-msg').style.visibility = 'hidden';
     }
 
-    if(checkPasswd == "") {
+    if(checkPasswd === "") {
         document.getElementById('checkpassword-msg').innerHTML= ':Password must be re-written';
         return false;
-    } else if(passwd != checkPasswd) {
+    } else if(passwd !== checkPasswd) {
         document.getElementById('checkpassword-msg').innerHTML= ':Password doesn\'t match';
         return false;
     } else {
